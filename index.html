@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h3>Challenge</h3>
+    <div class="challenge">
+      <header class="challenge__header">Header</header>
+      <div class="challenge__sidebar">Sidebar</div>
+      <div class="challenge__small-box-1">Small Box 1</div>
+      <div class="challenge__small-box-2">Small Box 2</div>
+      <div class="challenge__small-box-3">Small Box 3</div>
+      <main class="challenge__main">Main Content</main>
+      <footer class="challenge__footer">Footer</footer>
+    </div>
+    <!-- FIXME: Column??? Shouldn't it be row?  -->
+    <h2>Row 1</h2>
+    <div class="container--1">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 2</h2>
+    <p>
+      Third row is set, but cause there is no html tags, text, ect., set it leaves empty space
+    </p>
+    <div class="container--2">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 3</h2>
+    <p>
+      Third column width is set to 1fr - the third column width will grow to
+      full available size)
+    </p>
+    <div class="container--3">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 4</h2>
+    <p>
+      All columns widths are set to 1fr - all columns width will grow equally to
+      full available size
+    </p>
+    <div class="container--4">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 5</h2>
+    <p>
+      Grid-template-columns: 1fr 2fr 1fr<br />
+      The second column width will be double larger compering to first or third
+      column
+    </p>
+    <div class="container--5">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 6</h2>
+    <p>
+      Grid-template-rows: 1fr 2fr<br />
+      The second row height will be double larger compering to first row
+    </p>
+    <div class="container--6">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 7</h2>
+    <p>
+      Grid cell positioning with grid-row and gird-column or grid-area:
+      row-start / column-start / row-end / column-start
+    </p>
+    <div class="container--7">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 8</h2>
+    <p>
+      Spanning third grid cell to occupy two columns. Using grid-area to do
+      that. The fifth cell is hidden - it has lower z-index than the third
+      cell<br />
+      First cell is occupies all available container width. To do that
+      <b>
+        grid-column: 1 / -1 is used.
+      </b>
+      -1 spans cell to the end(right side) of the container. <br />
+      The second cell is spanned to the bottom of container. To do that
+      <b>grid-row:</b> property is used.
+    </p>
+    <div class="container--8">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>
+    <h2>Row 9</h2>
+    <p>Grid cells 1, 2, 3, 4 is explicit cells. Cells 5, 6, 7, 8 is implicit cells. Explicit cells is declared in css. Implicit cells is created by browser if grid-auto-* properties is declared in css.</p>
+    <div class="container--9">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+      <div class="item item--7">7: Light blue</div>
+      <div class="item item--8">8: Black</div>
+    </div>
+    <h2>Row 10</h2>
+    <p>Align Grid Items</p>
+    <p>All items, except nr: 4 is aligned(vertical) center. In cell nr: 4 is applied self align(vertical) and justify(horizontal) css rules.</p>
+    <div class="container--10">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: align-self: center, justify-self: center, width: 75%</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+      <div class="item item--7">7: grid-column: 1 / -1</div>
+      <div class="item item--8">8: Black</div>
+    </div>
+    <h2>Row 11</h2>
+    <p>Justify-content: space-evenly(horizontal) and align-content: center(vertical)</p>
+    <div class="container--11">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+      <div class="item item--7">7: Light blue</div>
+      <div class="item item--8">8: Black</div>
+    </div>
+    <h2>Row 12</h2>
+    <p>min-content, max-content, minmax()</p>
+    <p>minmax(minimum cells size, maximum cell size), e.g. grid-template-rows: minmax(95px, min-content) 250px; First row minimum height must be 95px, maximum height - so much as it can fit content. The second row height is set to 250px, thats way not all content of cell nr: 7 is visible. If the second row will be set to min-content, e.g. grid-template-rows: minmax(95px, min-content) min-content; The second row will expend its height to show all content in grid cells(in this example, cell nr: 7 is guilty for large seconds row height)  </p>
+    <div class="container--12">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+      <div class="item item--7">7: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod neque necessitatibus soluta consequuntur cum praesentium deleniti!</div>
+      <div class="item item--8">8: Black</div>
+    </div>
+    <h2>Row 13</h2>
+    <p>auto-fit and auto-fill</p>
+    <ul>
+      <li>grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)) - created as much rows that needed to fit content. rows minimum height is set to 100px, maximum 1fr(grow as much as needed to fit content)</li>
+      <li>grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) - created columns(8, 7 or 5 columns, etc) as much as needed to fit content. minimum width of the column must be 220px, maximum 1fr(grow as much as needed to fit content) </li>
+      <li>
+        grid-auto-rows: 350px; - rows which are generated automatically to fit content (which is no longer fitting in the declared rows), must have height 350px. 
+      </li>
+    </ul>
+    <div class="container--13">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Lorem ipsum dolor sit amet consectetur.</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+      <div class="item item--7">7: Light Blue</div>
+      <div class="item item--8">8: When this cell will pop to second row, it height will be 350px</div>
+    </div>
+
+    <h2>Row 14</h2>
+    <h3>auto-fit vs auto-fill</h3>
+
+      <h4>auto-fit</h4>
+    <div class="container--14">
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+    </div>
+    <h4>auto-fill</h4>
+    <div class="container--15">
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box span-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores blanditiis amet ut ducimus illum eaque reprehenderit eius quaerat molestias pariatur, labore similique minima velit soluta id mollitia quibusdam optio?</p>
+      </div>
+    </div>
+  </body>
+</html>
